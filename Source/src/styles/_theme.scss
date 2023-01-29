@@ -1,0 +1,49 @@
+
+html {
+
+  * {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .box-accent {
+    background-color: $color-accent;
+    color: #fff;
+  }
+
+  .box-grey {
+    background-color: $color-grey;
+    color: #000;
+  }
+
+  .box-white {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .box-black {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .text-stands-for {
+    font-size: 7em;
+  }
+
+  .typed-text-container {
+    font-weight: lighter;
+    font-size: 7em;
+
+    #typed-text {
+      display: inline;
+      
+      &::before {
+        content:'\200B';
+      }
+    }
+  }
+
+  .text-contribute {
+    font-size: 4em;
+  }
+
+}
