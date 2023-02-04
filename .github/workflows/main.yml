@@ -10,7 +10,7 @@ on:
 
 # Environment variables for the workflow
 env:
-  NODE_ENV: production
+  NODE_ENV: development
 
 # Define a job for the workflow
 jobs:
@@ -30,20 +30,11 @@ jobs:
       with:
         node-version: 14
 
-    # Install the project dependencies (while navigating to the Source folder)
-    - name: Install dependencies
+    # Install the dependencies and build project (while navigating to the Source folder)
+    - name: Install dependencies and build project
       run: |
         cd Source
-        npm ci
-
-    # Install cross-env, mini-css-extract-plugin, css-minimizer-webpack-plugin, and webpack-merge globally
-    - name: Install packages globally
-      run: npm install -g cross-env mini-css-extract-plugin css-minimizer-webpack-plugin webpack-merge
-
-    # Build the project (while navigating to the Source folder)
-    - name: Build project
-      run: |
-        cd Source
+        npm i
         npm run build
 
     # Deploy the built files to Github Pages
