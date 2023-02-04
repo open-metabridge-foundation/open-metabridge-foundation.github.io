@@ -30,11 +30,16 @@ jobs:
       with:
         node-version: 14
 
-    # Install the project dependencies and build the project (while navigating to the Source folder)
-    - name: Install dependencies and build project
+    # Install the project dependencies (while navigating to the Source folder)
+    - name: Install dependencies
       run: |
         cd Source
         npm ci
+
+    # Build the project (while navigating to the Source folder)
+    - name: Build project
+      run: |
+        cd Source
         npm run build
 
     # Deploy the built files to Github Pages
