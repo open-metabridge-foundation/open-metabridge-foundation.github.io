@@ -36,6 +36,12 @@ jobs:
         cd Source
         npm ci
 
+    # Install the cross-env package (while navigating to the Source folder)
+    - name: Install cross-env
+      run: |
+        cd Source
+        npm install cross-env
+
     # Build the project (while navigating to the Source folder)
     - name: Build project
       run: |
