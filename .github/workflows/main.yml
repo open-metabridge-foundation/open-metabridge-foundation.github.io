@@ -36,9 +36,9 @@ jobs:
         cd Source
         npm ci
 
-    # Install the cross-env package globally
-    - name: Install cross-env
-      run: npm install -g cross-env
+    # Install cross-env, mini-css-extract-plugin, css-minimizer-webpack-plugin, and webpack-merge globally
+    - name: Install packages globally
+      run: npm install -g cross-env mini-css-extract-plugin css-minimizer-webpack-plugin webpack-merge
 
     # Build the project (while navigating to the Source folder)
     - name: Build project
