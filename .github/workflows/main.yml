@@ -30,17 +30,12 @@ jobs:
       with:
         node-version: 14
 
-    # Navigate to the Source folder
-    - name: Navigate to Source folder
-      run: cd Source
-
-    # Install the project dependencies
-    - name: Install dependencies
-      run: npm ci
-
-    # Build the webpack project
-    - name: Build project
-      run: npm run build
+    # Install the project dependencies and build the project (while navigating to the Source folder)
+    - name: Install dependencies and build project
+      run: |
+        cd Source
+        npm ci
+        npm run build
 
     # Deploy the built files to Github Pages
     - name: Deploy to Github Pages
@@ -48,5 +43,5 @@ jobs:
       with:
         # The branch to deploy to
         BRANCH: gh-pages
-        # The folder containing the built files
-        FOLDER: dist
+        # The folder containing the built files (inside of the Source folder)
+        FOLDER: Source/dist
