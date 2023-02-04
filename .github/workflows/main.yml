@@ -30,6 +30,10 @@ jobs:
       with:
         node-version: 14
 
+    # Navigate to the Source folder
+    - name: Navigate to Source folder
+      run: cd Source
+
     # Install the project dependencies
     - name: Install dependencies
       run: npm ci
