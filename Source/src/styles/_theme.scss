@@ -1,10 +1,27 @@
 
 html {
-
-  * {
+  
+  body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .title-text {
+    font-size: 4em;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 7em;
+    }
   }
   
+  .mb-logo {
+    margin-bottom: 8em;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 12em;
+    }
+  }
+
   .box-accent {
     background-color: $color-accent;
     color: #fff;
@@ -26,12 +43,11 @@ html {
   }
 
   .text-stands-for {
-    font-size: 7em;
+    font-weight: 600;
   }
 
   .typed-text-container {
     font-weight: lighter;
-    font-size: 7em;
 
     #typed-text {
       display: inline;
@@ -43,7 +59,19 @@ html {
   }
 
   .text-contribute {
-    font-size: 4em;
+    font-size: 3em;
   }
 
+  #circle-layer {
+    position: absolute;
+    background-color: $color-accent;
+    z-index: 1;
+    height: 100%;
+  }
+
+  #header-layer {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
 }
