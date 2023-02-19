@@ -3,7 +3,7 @@ import Typed from 'typed.js';
 
 // simulate text typing
 new Typed('#typed-text', {
-    strings: ['Open Source', 'Interoperability', 'Security'],
+    strings: ['Phygitals', 'physical NFTs', 'EVM', 'digital twins', 'digital x physical'],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 500,
