@@ -7,9 +7,9 @@
     <title>OMBF</title>
   </head>
   <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
       <div class="row position-relative">
-        <canvas id="circle-layer"></canvas>
+        <canvas id="circle-layer" class="p-0"></canvas>
         <div id="header-layer" class="col-12 px-4">
           <div class="container py-5">
             <div class="row">
@@ -35,44 +35,41 @@
           <div class="container py-5">
             <div class="row">
               <div class="col-12 col-md-6">
-                <h2 class="mb-3">What is OMBF?</h2>
-                <p>The OMBF aims to define and specify an interoperable and agnostic
-                  family of protocols that are based on linking/connecting physical
-                  items with their digital counterparts.</p>
-                <p>Additionally, it aims to foster and maintain an inclusive ecosystem
-                  around implementing partners.</p>
+                <h2 class="mb-3">What is the Open MetaBridge Foundation?</h2>
+                <p>The goal of the Open MetaBridge Foundation (OMBF) is to establish a set of protocols that are interoperable and agnostic. These protocols will facilitate the connection between physical items and their corresponding digital counterparts.</p>
+                <p>Furthermore, the OMBF seeks to create an inclusive ecosystem for implementing partners, promoting collaboration and ongoing development.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 box-white">
           <div class="container py-5">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
               <div class="col-12 offset-md-2 col-md-6 order-md-last">
-                <img class="img-fluid" width="600" src="assets/ombf-illustration-protocol-overview.svg" />
+                <img class="img-fluid" width="450" src="assets/ombf-illustration-protocol-overview-V2.svg" />
               </div>
               <div class="col-12 col-md-4 d-flex align-items-end flex-colum order-md-first">
                 <div>
                   <h2 class="my-5">Core Protocol</h2>
-                  <p>On an abstract level, the core Open MetaBridge Protocol (OMBP) specifies the following steps:
+                  <p>At an abstract level, the core Open MetaBridge Protocol (OMBP) comprises the following steps:
                   </p>
                   <ol>
-                    <li><b>Registration</b>: The creator of the physical item registers the item together with an independent claiming code on the distributed ledger.</li>
-                    <li>The user and creator agree upon an out-of-band trade. As a result, the creator hands the claiming code to the user.</li>
-                    <li><b>Claiming</b>: The user uses the claiming code to mint the NFT registered to the physical item.</li>
+                    <li><b>Registration</b>: The physical item's creator registers the item and an independent claiming code on the distributed ledger.</li>
+                    <li><b>Out-of-band trade</b>: The creator and user agree on a trade outside of the protocol. The creator then hands the claiming code to the user.</li>
+                    <li><b>Claiming</b>: The user utilizes the claiming code to create a non-fungible token (NFT) for the physical item.</li>
                   </ol>
-                  <p>During the (1) Registration and (3) Claiming steps, the creator and user respectively have to prove the physical posession of the item, while the authenticity of the item can be verified during the (2) trading step or for during any upcoming physical transfers of the item.</p>
+                  <p>During the Registration and Claiming steps, the creator and user respectively must prove physical possession of the item. The authenticity of the item can be verified during the trading step or any subsequent physical transfers of the item.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 box-grey">
-          <div class="container py-3">
+          <div class="container py-5">
             <div class="row">
               <div class="col-12 text-center">
                   <a href="https://openmetabridge.org/protocol/" class="btn btn-primary btn-lg rounded-0 btn-dark" tabindex="-1" role="button" aria-disabled="true" target="_blank">
-                    <img class="img-fluid icon" src="assets/icon_file.svg" /> Full protocol specification
+                    <img class="img-fluid icon" src="assets/icon_file.svg" /> Full Protocol Specification
                   </a>
               </div>
             </div>
@@ -83,39 +80,21 @@
             Open Source
             <img class="float-end" width="60" src="assets/ombf-icon-opensource-b_w.svg" />
           </h2>
-          <p>All protocols are based on modern cryp-
-            tographic primitives and can be audited
-            publicly due to the open source nature of
-            the organization. The security and future
-            proof of the protocols is an integral value
-            of the OMBF that aims to develop long
-            term established trust in the protocols as
-            well as the implementations.</p>
+          <p>The OMBF maintains all of its protocols in an open-source manner, allowing community members to contribute to their development. The organization operates as a non-profit, and all of its work is made public. Additionally, anyone is welcome to attend OMBF meetings as they are open to the public.</p>
         </div>
         <div class="col-12 col-md-4 box-black p-5">
           <h2 class="mb-5">
             Interoperability
             <img class="float-end" width="60" src="assets/ombf-icon-interoperability-white.svg" />
           </h2>
-          <p>All protocols are maintained in an open
-            source manner and can be contributed to
-            by community members. The entire orga-
-            nization operates in a non-profit manner.
-            All work is published and meetings are
-            open for anyone to join.</p>
+          <p>Creating agnostic protocols that can work with any smart contract platform is at the core of OMBF's mission. The organization aims to develop protocols that are not limited to any specific type of distributed ledger or blockchain, and could even be implemented with a centralized database.</p>
         </div>
         <div class="col-12 col-md-4 box-accent p-5">
           <h2 class="mb-5">
             Security
             <img class="float-end" width="60" src="assets/ombf-icon-security-b_w.svg" />
           </h2>
-          <p>It lies at the heart of the OMBF to create
-            agnostic protocols which, in theory, can
-            work with any smart contract platform.
-            The implementation of the protocols is not
-            limited to any specific type of distributed
-            ledger or blockchain and could even be
-            implemented with a centralized database.</p>
+          <p>The OMBF's protocols rely on contemporary cryptographic primitives and are publicly auditable, thanks to the organization's open-source nature. Ensuring the security and future-proofing of these protocols is a crucial value of the OMBF, as it aims to foster long-term, established trust in both the protocols themselves and their implementations.</p>
         </div>
         <div class="col-12 box-white">
           <div class="container py-5">
@@ -133,7 +112,7 @@
           <div class="container py-3">
             <div class="row">
               <div class="col-12 text-center">
-                <h2>Follow along and join the discussion!</h2>
+                <h2>Join the conversation and stay updated!</h2>
               </div>
             </div>
           </div>
