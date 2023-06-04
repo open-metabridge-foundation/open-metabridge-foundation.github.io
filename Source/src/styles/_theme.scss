@@ -62,6 +62,13 @@ html {
     font-size: 3em;
   }
 
+  .icon{
+    position: relative;
+    height: 1em;
+    margin-right:10px;
+    top: -3px; // Change that for vertical alignement. If OK as is, delete.
+  }
+
   #circle-layer {
     position: absolute;
     background-color: $color-accent;
@@ -75,10 +82,31 @@ html {
     color: #fff;
   }
 
-  .icon{
-    position: relative;
-    height: 1em;
-    margin-right:10px;
-    top: -3px; // Change that for vertical alignement. If OK as is, delete.
+  #footer-layer {
+
+    .contact {
+      font-size: 0.8em;
+    }
+
+    .icons {
+      
+       a {
+        font-size: 1.8em;
+        color: #fff;
+
+        &:hover {
+          &.generic {
+            color: darken(#fff, 30%)
+          }
+
+          &.twitter {
+            color: $color-twitter;
+          }
+          &.discord {
+            color: $color-discord;
+          }
+        }
+       }
+    }
   }
 }
